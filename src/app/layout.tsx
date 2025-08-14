@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Varela } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
 const varela = Varela({
   subsets: ["latin"],
@@ -20,7 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${varela.variable} antialiased`}>{children}</body>
+      <body className={`${varela.variable} antialiased`}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
