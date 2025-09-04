@@ -11,6 +11,14 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "#2b6faf",
+      },
+      container: {
+        center: true,
+        padding: "1rem",
+        screens: {
+          DEFAULT: "80rem",
+        },
       },
     },
   },
