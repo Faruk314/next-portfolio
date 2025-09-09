@@ -2,7 +2,7 @@ import { Menu } from "lucide-react";
 import React from "react";
 import { Github } from "lucide-react";
 
-const Navbar = () => {
+export default function Navbar() {
   return (
     <nav className="md:bg-primary h-20 md:h-28 text-white bg-gray-100 shadow-[0_25px_40px_-12px_rgba(0,0,0,0.5)] z-20">
       <div className="container flex items-center justify-between h-full">
@@ -33,6 +33,4 @@ const Navbar = () => {
       </div>
     </nav>
   );
-};
-
-export default Navbar;
+}
